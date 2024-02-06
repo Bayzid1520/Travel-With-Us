@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --primary-color: #131318;
+  --secondary-color: #ff5400;
+}
+
+.btn {
+  border-radius: 8px;
+  background: var(--secondary-color);
+  padding: 15px 35px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+nav,
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.25rem;
+}
+
+#logo {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+#logo h1 {
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+#logo h1 span {
+  font-weight: 800;
+  color: var(--secondary-color);
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav > ul li {
+  list-style: none;
+}
+
+nav > ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+#home {
+  color: var(--secondary-color);
+}
+
+#menu {
+  display: none;
+}
+
+#explore {
+  margin-top: 3rem;
+  background: url("/Images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.explore-title {
+  margin-top: 6.625rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.explore-description {
+  width: 60%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.explore-btn {
+  display: flex;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 6.625rem;
+}
+.explore-btn li {
+  list-style: none;
+}
+.explore-btn button {
+  border: none;
+  width: 174px;
+  height: 52px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgba(19, 19, 24, 0.5);
+}
+
+#reverse-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+#tour {
+  margin: 6.25rem 0;
+  display: flex;
+  gap: 3.375rem;
+}
+
+.tour-title,
+.destination-title,
+.options-title {
+  color: var(--primary-color);
+  font-size: 3.75rem;
+  font-weight: 800;
+  margin-bottom: 1.75rem;
+}
+
+.tour-description {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+.tour-description em {
+  color: var(--secondary-color);
+}
+.tour-description-list {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.tour-description-list li {
+  margin-bottom: 1.5rem;
+}
+
+.destination-title,
+.options-title{
+  text-align: center;
+}
+
+.destination-description,
+.options-description{
+  color: var(--primary-color);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 6.25rem;
+}
+
+.destination-grid img {
+  width: 100%;
+  height: 99%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.grid-item-1 {
+  grid-column: 1 / span 6;
+  position: relative;
+}
+.grid-text {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.grid-item-2 {
+  grid-column: 7 / span 6;
+  position: relative;
+}
+.grid-item-3 {
+  grid-column: 1 / span 3;
+  position: relative;
+}
+
+.grid-item-4 {
+  grid-column: 4 / span 5;
+  position: relative;
+}
+
+.grid-item-5 {
+  grid-column: 9 / span 4;
+  position: relative;
+}
+
+.grid-item-6 {
+  grid-column: 1 / span 5;
+  position: relative;
+}
+
+.grid-item-7 {
+  grid-column: 6 / span 7;
+  position: relative;
+}
+.card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  width: 45%;
+  padding-left: 2rem;
+  margin-top: 3rem;
+}
+.card-description {
+  width: 80%;
+}
+.card img {
+  margin-top: 2rem;
+}
+.card-title {
+  margin-top: 2rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card-description {
+  margin-bottom: 2rem;
+  color: #5a5a5d;
+  margin-top: 1rem;
+}
+#card-blue {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+#italy {
+  display: flex;
+  margin: 6.25rem auto;
+  gap: 1.5rem;
+}
+.italy-title {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 3.25rem;
+}
+.italy-content {
+  width: 40%;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.italy-content hr,
+.italy-text,
+.italy-content input[type="text"],
+.italy-content input[type="email"],
+.italy-content button {
+  width: 80%;
+  margin: 0 auto;
+}
+.italy-content hr {
+  background: rgba(19, 19, 24, 0.1);
+}
+.italy-text {
+  margin: 1.5rem auto;
+}
+
+.italy-content input[type="email"],
+.italy-content input[type="text"] {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  background: rgba(19, 19, 24, 0.05);
+  margin: 1rem auto;
+}
+.italy-img {
+  position: relative;
+}
+
+.savings {
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2.5rem 0.75rem;
+  background-color: var(--secondary-color);
+  left: 60%;
+  top: 55%;
+  transform: rotate(-45deg);
+}
+.savings h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.savings a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(19, 19, 24, 0.05);
+  /* padding: 6.875rem auto; */
+}
+
+footer > #logo {
+  margin-top: 6.875rem;
+}
+.footer-text {
+  width: 50%;
+  text-align: center;
+  /* margin: 0 auto; */
+  margin-top: 1rem;
+}
+
+footer > ul {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+footer > ul li {
+  list-style: none;
+}
+
+footer hr {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+#copyright {
+  margin-bottom: 6.785rem;
+}
